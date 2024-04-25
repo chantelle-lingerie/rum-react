@@ -54,7 +54,7 @@ export function WithRumComponentContext<PropsType>(
     componentName: string,
     Component: React.FunctionComponent<PropsType>
 ): React.FunctionComponent<PropsType>;
-export function WithRumComponentContext<PropsType>(
+export function WithRumComponentContext<PropsType extends { children?: React.ReactNode }>(
     componentName: string,
     options: any,
     Component?: React.FunctionComponent<PropsType>
